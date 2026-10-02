@@ -18,3 +18,11 @@ export function validateDeck(input){
  deck.cards.forEach((card,i)=>{const path='/cards/'+i;if(seen.has(card.id))diagnostics.push(error('flashcards.duplicate',path+'/id'));seen.add(card.id);content(card.front,path+'/front');content(card.back,path+'/back');(card.hints??[]).forEach((hint,j)=>content(hint,path+'/hints/'+j));metadata(card.metadata,path+'/metadata');});
  return diagnostics.length?{valid:false,diagnostics}:{valid:true,diagnostics:[]};
 }
+
+const observationValidate=ajv.compile(JSON.parse(readFileSync(new URL('../schemas/observation.v1.schema.json',import.meta.url))));
+export function validateObservation(input){
+ const r=copyGeneratedJson(input,{maxBytes:65536,maxDepth:8,maxCollectionSize:100,maxStringLength:128,maxNodes:1000});
+ if(!r.valid||!observationValidate(r.value))return{valid:false,diagnostics:[error('flashcards.observation','')]};
+ const o=r.value;if(o.outcome&&(o.outcome.kind==='unrated'?(o.outcome.confidence!==null||o.outcome.rating!==undefined):(o.outcome.rating===undefined||o.outcome.confidence!==({again:0,hard:1/3,good:2/3,easy:1})[o.outcome.rating])))return{valid:false,diagnostics:[error('flashcards.observation','/outcome')]};
+ return{valid:true,diagnostics:[]};
+}

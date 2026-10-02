@@ -12,7 +12,8 @@
     "schemas",
     "docs",
     "fixtures",
-    "README.md"
+    "README.md",
+    "session"
   ],
   "exports": {
     ".": {
@@ -25,10 +26,16 @@
       "import": "./validation/index.js",
       "default": "./validation/index.js"
     },
-    "./schemas/deck.v1.schema.json": "./schemas/deck.v1.schema.json"
+    "./schemas/deck.v1.schema.json": "./schemas/deck.v1.schema.json",
+    "./session": {
+      "types": "./session/index.d.ts",
+      "import": "./session/index.js",
+      "default": "./session/index.js"
+    },
+    "./schemas/observation.v1.schema.json": "./schemas/observation.v1.schema.json"
   },
   "scripts": {
-    "test": "node scripts/check-conformance.mjs"
+    "test": "node scripts/check-conformance.mjs && node scripts/check-session.mjs"
   },
   "peerDependencies": {
     "@interactive-project/protocol": "0.1.0",

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/interactive-project/flashcards/blob/main/schemas/observation.v1.schema.json",
+  "title": "Privacy-safe Flashcard event observation v1",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "observationVersion": {
+          "const": "1.0.0"
+        },
+        "kind": {
+          "const": "card-exposed"
+        },
+        "cardId": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,63}$"
+        },
+        "face": {
+          "enum": [
+            "front",
+            "back"
+          ]
+        }
+      },
+      "required": [
+        "observationVersion",
+        "kind",
+        "cardId",
+        "face"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "observationVersion": {
+          "const": "1.0.0"
+        },
+        "kind": {
+          "const": "review-recorded"
+        },
+        "cardId": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,63}$"
+        },
+        "outcome": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "enum": [
+                "self-report",
+                "unrated"
+              ]
+            },
+            "confidence": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "correctness": {
+              "const": null
+            },
+            "rating": {
+              "enum": [
+                "again",
+                "hard",
+                "good",
+                "easy"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "confidence",
+            "correctness"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "observationVersion",
+        "kind",
+        "cardId"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}
