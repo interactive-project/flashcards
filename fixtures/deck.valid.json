@@ -1,0 +1,367 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "00000000-0000-4000-8000-000000000050",
+  "metadata": {
+    "title": {
+      "kind": "localized-text",
+      "schemaVersion": "1.0.0",
+      "defaultLocale": "es",
+      "translations": {
+        "es": {
+          "text": "¿Cuánto es dos más dos?"
+        },
+        "en": {
+          "text": "What is two plus two?"
+        },
+        "ar": {
+          "text": "كم يساوي اثنان زائد اثنين؟"
+        }
+      }
+    }
+  },
+  "cards": [
+    {
+      "id": "cardA",
+      "front": {
+        "kind": "group",
+        "schemaVersion": "1.0.0",
+        "children": [
+          {
+            "kind": "text",
+            "schemaVersion": "1.0.0",
+            "language": "es",
+            "value": {
+              "kind": "localized-text",
+              "schemaVersion": "1.0.0",
+              "defaultLocale": "es",
+              "translations": {
+                "es": {
+                  "text": "¿Cuánto es dos más dos?"
+                },
+                "en": {
+                  "text": "What is two plus two?"
+                },
+                "ar": {
+                  "text": "كم يساوي اثنان زائد اثنين؟"
+                }
+              }
+            }
+          },
+          {
+            "kind": "math",
+            "schemaVersion": "1.0.0",
+            "format": "tex",
+            "source": "\\\\frac{1}{2} + \\\\frac{1}{2} = 1",
+            "plainText": {
+              "kind": "localized-text",
+              "schemaVersion": "1.0.0",
+              "defaultLocale": "en",
+              "translations": {
+                "en": {
+                  "text": "One half plus one half equals one."
+                }
+              }
+            }
+          },
+          {
+            "kind": "image",
+            "schemaVersion": "1.0.0",
+            "asset": {
+              "kind": "asset-ref",
+              "schemaVersion": "1.0.0",
+              "id": "urn:assets:triangle",
+              "mediaType": "image/png",
+              "uri": "https://assets.example.org/triangle"
+            },
+            "alt": {
+              "kind": "localized-text",
+              "schemaVersion": "1.0.0",
+              "defaultLocale": "en",
+              "translations": {
+                "en": {
+                  "text": "A right triangle with sides three, four and five."
+                }
+              }
+            },
+            "caption": {
+              "kind": "localized-text",
+              "schemaVersion": "1.0.0",
+              "defaultLocale": "en",
+              "translations": {
+                "en": {
+                  "text": "Pythagoras example"
+                }
+              }
+            }
+          },
+          {
+            "kind": "group",
+            "schemaVersion": "1.0.0",
+            "layout": "inline",
+            "children": [
+              {
+                "kind": "code",
+                "schemaVersion": "1.0.0",
+                "source": "console.log('example only');\\n",
+                "programmingLanguage": "javascript",
+                "caption": {
+                  "kind": "localized-text",
+                  "schemaVersion": "1.0.0",
+                  "defaultLocale": "en",
+                  "translations": {
+                    "en": {
+                      "text": "Read this snippet. It is not executed."
+                    }
+                  }
+                }
+              },
+              {
+                "kind": "content-ref",
+                "schemaVersion": "1.0.0",
+                "id": "urn:content:shared-prompt",
+                "plainText": {
+                  "kind": "localized-text",
+                  "schemaVersion": "1.0.0",
+                  "defaultLocale": "en",
+                  "translations": {
+                    "en": {
+                      "text": "Shared prompt"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "hints": [
+        {
+          "kind": "text",
+          "schemaVersion": "1.0.0",
+          "language": "es",
+          "value": {
+            "kind": "localized-text",
+            "schemaVersion": "1.0.0",
+            "defaultLocale": "es",
+            "translations": {
+              "es": {
+                "text": "¿Cuánto es dos más dos?"
+              },
+              "en": {
+                "text": "What is two plus two?"
+              },
+              "ar": {
+                "text": "كم يساوي اثنان زائد اثنين؟"
+              }
+            }
+          }
+        }
+      ],
+      "tags": [
+        "math",
+        "multilingual"
+      ]
+    },
+    {
+      "id": "cardB",
+      "front": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cardC",
+      "front": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cardD",
+      "front": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cardE",
+      "front": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "00000000-0000-4000-8000-000000000050",
+  "metadata": {
+    "title": {
+      "kind": "localized-text",
+      "schemaVersion": "1.0.0",
+      "defaultLocale": "es",
+      "translations": {
+        "es": {
+          "text": "¿Cuánto es dos más dos?"
+        },
+        "en": {
+          "text": "What is two plus two?"
+        },
+        "ar": {
+          "text": "كم يساوي اثنان زائد اثنين؟"
+        }
+      }
+    }
+  },
+  "cards": [
+    {
+      "id": "cardA",
+      "front": {
+        "schemaVersion": "1.0.0",
+        "kind": "html",
+        "source": "unsafe"
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "hints": [
+        {
+          "kind": "text",
+          "schemaVersion": "1.0.0",
+          "language": "es",
+          "value": {
+            "kind": "localized-text",
+            "schemaVersion": "1.0.0",
+            "defaultLocale": "es",
+            "translations": {
+              "es": {
+                "text": "¿Cuánto es dos más dos?"
+              },
+              "en": {
+                "text": "What is two plus two?"
+              },
+              "ar": {
+                "text": "كم يساوي اثنان زائد اثنين؟"
+              }
+            }
+          }
+        }
+      ],
+      "tags": [
+        "math",
+        "multilingual"
+      ]
+    },
+    {
+      "id": "cardB",
+      "front": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cardC",
+      "front": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cardD",
+      "front": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cardE",
+      "front": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      },
+      "back": {
+        "kind": "text",
+        "schemaVersion": "1.0.0",
+        "language": "es",
+        "value": {
+          "kind": "localized-text",
+          "schemaVersion": "1.0.0",
+          "defaultLocale": "es",
+          "translations": {
+            "es": {
+              "text": "¿Cuánto es dos más dos?"
+            },
+            "en": {
+              "text": "What is two plus two?"
+            },
+            "ar": {
+              "text": "كم يساوي اثنان زائد اثنين؟"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

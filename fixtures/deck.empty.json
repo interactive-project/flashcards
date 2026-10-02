@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "00000000-0000-4000-8000-000000000050",
+  "metadata": {
+    "title": {
+      "kind": "localized-text",
+      "schemaVersion": "1.0.0",
+      "defaultLocale": "es",
+      "translations": {
+        "es": {
+          "text": "¿Cuánto es dos más dos?"
+        },
+        "en": {
+          "text": "What is two plus two?"
+        },
+        "ar": {
+          "text": "كم يساوي اثنان زائد اثنين؟"
+        }
+      }
+    }
+  },
+  "cards": []
+}
