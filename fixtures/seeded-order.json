@@ -1,0 +1,11 @@
+{
+  "algorithm": "mulberry32-fisher-yates-v1",
+  "seed": 12345,
+  "order": [
+    "cardA",
+    "cardC",
+    "cardD",
+    "cardB",
+    "cardE"
+  ]
+}

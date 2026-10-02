@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/interactive-project/flashcards/blob/main/schemas/deck.v1.schema.json",
+  "title": "Portable flashcard deck v1",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "cards": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,63}$"
+          },
+          "front": {
+            "$ref": "https://github.com/interactive-project/content-node/blob/main/schemas/content-node.v1.schema.json"
+          },
+          "back": {
+            "$ref": "https://github.com/interactive-project/content-node/blob/main/schemas/content-node.v1.schema.json"
+          },
+          "hints": {
+            "type": "array",
+            "maxItems": 10,
+            "items": {
+              "$ref": "https://github.com/interactive-project/content-node/blob/main/schemas/content-node.v1.schema.json"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64
+            }
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "$ref": "https://github.com/interactive-project/protocol/blob/main/schemas/shared-content.v1.schema.json#/$defs/localizedText"
+              },
+              "description": {
+                "$ref": "https://github.com/interactive-project/content-node/blob/main/schemas/content-node.v1.schema.json"
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "front",
+          "back"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "https://github.com/interactive-project/protocol/blob/main/schemas/shared-content.v1.schema.json#/$defs/localizedText"
+        },
+        "description": {
+          "$ref": "https://github.com/interactive-project/content-node/blob/main/schemas/content-node.v1.schema.json"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "cards"
+  ],
+  "additionalProperties": false
+}
